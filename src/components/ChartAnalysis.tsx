@@ -119,7 +119,7 @@ export default function ChartAnalysis({
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis type="number" />
             <YAxis dataKey="name" type="category" width={110} tick={{ fontSize: 12 }} />
-            <Tooltip formatter={(value: number) => [`${value}万円`, "収益万円"]} />
+            <Tooltip formatter={(value) => [`${value}万円`, "収益万円"]} />
             <Bar dataKey="収益万円" radius={[0, 4, 4, 0]}>
               {categoryRevenueData.map((entry, index) => (
                 <Cell key={`cell-${index}`} fill={entry.fill} />
@@ -161,7 +161,7 @@ export default function ChartAnalysis({
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis type="number" />
             <YAxis dataKey="name" type="category" width={130} tick={{ fontSize: 11 }} />
-            <Tooltip formatter={(value: number) => [`${value}万円`, "収益万円"]} />
+            <Tooltip formatter={(value) => [`${value}万円`, "収益万円"]} />
             <Bar dataKey="収益万円" fill="#10b981" radius={[0, 4, 4, 0]} />
           </BarChart>
         </ResponsiveContainer>
