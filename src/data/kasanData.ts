@@ -34,6 +34,8 @@ export const facilityTypes: FacilityType[] = [
   { id: "tokuyou_unit", name: "特養（ユニット型）", beds: 60, unit_price_per_unit: 10.90, occupancy_rate: 0.97 },
   { id: "tokuyou_kojitsu", name: "特養（従来型個室）", beds: 50, unit_price_per_unit: 10.90, occupancy_rate: 0.97 },
   { id: "tokuyou_tasyou", name: "特養（多床室）", beds: 80, unit_price_per_unit: 10.90, occupancy_rate: 0.97 },
+  { id: "rouken", name: "介護老人保健施設（老健）", beds: 100, unit_price_per_unit: 10.48, occupancy_rate: 0.90 },
+  { id: "group_home", name: "グループホーム（認知症対応型）", beds: 18, unit_price_per_unit: 11.05, occupancy_rate: 0.95 },
 ];
 
 // デフォルト施設（基準値：収益計算の元データ）
